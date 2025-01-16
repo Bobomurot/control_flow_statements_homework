@@ -13,4 +13,21 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    p_count = 0
+    n_count = 0
+    if a > 0:
+        p_count += 1
+    elif a < 0:
+        n_count += 1
+    if b > 0:
+        p_count += 1
+    elif b < 0:
+        n_count += 1
+    if c > 0:
+        p_count += 1
+    elif c < 0:
+        n_count += 1
+    if p_count > n_count:
+        return "there are a lot of positive numbers"
+    else:
+        return "there are a lot of negative numbers"
